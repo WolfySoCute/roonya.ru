@@ -1,3 +1,24 @@
-@media sm {
+@media (max-width: 768px) {
+
+	.title {
+		font-size: 60px;
+	}
+
+	.container {
+		width: 100%;
+		margin-bottom: 2em;
+	}
 	
-}
+	.card {
+		padding: 10px;
+		background-color: #2f3136;
+		color: white;
+		max-width: 300px;
+		min-height: 450px;
+	}
+
+	footer p {
+		font-size: 15px;
+	}
+ }
+ 

@@ -3,20 +3,32 @@
 
 body {
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	background-color: #36393f;
 }
 
-nav {
+main {
+	flex-grow: 1;
+}
+
+.shadow {
+	box-shadow: 0px 0px 5px 5px #2f3136;
+}
+
+/* nav {
 	padding: 10px;
 	background-color: #2f3136;
 	box-shadow: 0px 0px 5px 5px #2f3136;
 }
 
-nav a {
+.nav-link {
 	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
 	text-align: center;
 	color: white
-}
+} */
 
 .roonya {
 	background-color: #2f3136;
@@ -43,15 +55,15 @@ nav a {
 	width: 960px;
 	margin-top: 2em;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .card {
 	padding: 10px;
 	background-color: #2f3136;
 	color: white;
-	max-width: 250px;
-	min-height: 451px;
+	max-width: 300px;
+	min-height: 400px;
 }
 
 .card-title {
@@ -70,22 +82,15 @@ nav a {
 
 .card-button {
 	outline: #5865F2;
-	/* width: 90%; */
 	position: absolute;
-	/* bottom: 0px; */
 	bottom: 10px;
 	left: 10px;
 	right: 10px;
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	
+	flex-shrink: 0;
 	background-color: #2f3136;
-	box-shadow: 0px 0px 5px 5px #2f3136;
 }
 
 footer p {
